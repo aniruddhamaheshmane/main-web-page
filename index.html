@@ -153,9 +153,16 @@ padding: 10px;
     font-weight: 1000;
 color: rgb(255, 0, 0);
 }
+#element2{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 1000;
+color: rgb(0, 98, 255);
+}
 
-
-
+#firsttypeof{
+    display: flex;
+}
 </style>
 </head>
 <body>
@@ -178,21 +185,25 @@ color: rgb(255, 0, 0);
     
     
     <div id="as">  
-        <p id="sms" class="a1"></p>
+       
+          
+       <div id="firsttypeof">
+        <p id="smspr"></p> 
+        <span id="element2"></span>
+       </div>
+       
             <p class="a11">Hi..I am <span id="element"></span></p>
-        
-        
        
     </div>
     <div id="bbb">
     
             <marquee class="mar2" direction="down"   scrollamount = "1" behavior="alternate" direction="">
                 <div>
-                <button class="ba"><a class="cv1" href="https://final-cv-aniruddha-web-page-wpn1.netlify.app/">click @ view my CV</a></button>
+                <button class="ba"><a class="cv1" href="https://aniruddhamaheshmane.github.io/cv-page/">click @ view my CV</a></button>
             </div>
          
         <div>
-            <button class="ba"><a class="cv1" href="https://final-cv-aniruddha-web-page-wp2.netlify.app/">click @ view my Cover letter</a></button>
+            <button class="ba"><a class="cv1" href="https://aniruddhamaheshmane.github.io/cover-letter/">click @ view my Cover letter</a></button>
         </div>
 
         <div>
@@ -219,11 +230,28 @@ color: rgb(255, 0, 0);
 </div>
 
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script>
+
+    let smsa = prompt("Entrw your name.");
+//     const time = new Date().getHours();
+// let greeting;
+// if (time < 12) {
+//   greeting = "Good Morning and Welcome @ ";
+// } else if (time < 17) {
+//   greeting = "Good Afternoon and Welcome @ ";
+// } else {
+//   greeting = "Good Evening and Welcome @ ";
+// }
 
 var typed = new Typed('#element', {
       strings: ['<i>Aniruddha......</i>','<i>Front-End Web Developer......</i>'],
+      typeSpeed: 130,
+      backSpeed:30,
+      loop:true})
+   
+var typed = new Typed('#element2', {
+      strings: [smsa + " "+" "],
       typeSpeed: 130,
       backSpeed:30,
       loop:true})
@@ -237,39 +265,34 @@ var typed = new Typed('#element', {
 const time = new Date().getHours();
 let greeting;
 if (time < 12) {
-  greeting = "Good Morning and Welcome @ Respected Sir&nbsp/&nbspMadam.";
+  greeting = "Good Morning and Welcome @ "+ " "+" -";
 } else if (time < 17) {
-  greeting = "Good Afternoon and Welcome @ Respected Sir&nbsp/&nbspMadam.";
+  greeting = "Good Afternoon and Welcome @ "+ " "+"- ";
 } else {
-  greeting = "Good Evening and Welcome @ Respected Sir&nbsp/&nbspMadam.";
+  greeting = "Good Evening and Welcome @ "+ " "+"- ";
 }
-document.getElementById("sms").innerHTML = greeting;
+document.getElementById("smspr").innerHTML = greeting;
 
 const time2 = new Date().getHours();
 let greeting2;
 if (time < 12) {
-  greeting2 = "Good Morning and Welcome @ Respected Sir/Madam.";
+  greeting2 = "Good Morning and Welcome @ "+ " "+"- ";
 } else if (time < 17) {
-  greeting2 = "Good Afternoon and Welcome @ Respected Sir/Madam.";
+  greeting2 = "Good Afternoon and Welcome @ "+ " "+"- ";
 } else {
-  greeting2 = "Good Evening and Welcome @ Respected Sir/Madam.";
+  greeting2 = "Good Evening and Welcome @ "+ " "+"- ";
 };
-let smsa = prompt("Entrw your name.");
-function sdc() {
-    if (smsa === "" || smsa === null) {
-        alert("page request @ please ENTER your name")
-        window.location.reload();
-}else{
-    firsta_lert()
-};
-};sdc();
 
-function firsta_lert() {
-    if(smsa !== ""|| "null"){
-     
-alert("Hi.." + smsa + " "+ greeting2+ "\n-Respected visitor...\nThis Website page best supported in PC or laptop.\nIf open link in mobail;please on desktop mode.\n"+ "\nvisit page date and time-\n"+ new Date + "\nyour faithfully@Aniruddha Mane.")
-    }
-};
+// function sdc() {
+//     if (smsa === "" || smsa === null) {
+//         alert("page request @ please ENTER your name")
+//         window.location.reload();
+// }else{
+//     firsta_lert()
+// };
+// };sdc();
+
+
 
 
 
