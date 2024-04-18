@@ -344,15 +344,16 @@ function welcome3() {
 const time = new Date().getHours();
 let greeting;
 if (time < 12) {
-  greeting = "Good Morning and Welcome @ "+ " "+" ";
+  greeting = "Good Morning and Welcome @"+ "&nbsp"+" ";
 } else if (time < 17) {
-  greeting = "Good Afternoon and Welcome @"+ " "+"";
+  greeting = "Good Afternoon and Welcome @"+ "&nbsp"+"";
 } else {
-  greeting = "Good Evening and Welcome @ "+ " "+" ";
+  greeting = "Good Evening and Welcome @&"+ "&nbsp"+" ";
 }
 document.getElementById("smspr").innerHTML = greeting;
 
 document.getElementById("element2").innerHTML =   smsa.toUpperCase();
+
 
 
 // var logoutbtn = document.getElementById("#logout");
