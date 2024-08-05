@@ -34,7 +34,7 @@ flex-wrap: wrap;
 
 }
 .nav>div{
-border: 2px solid white;
+border: 2px solid rgb(0, 0, 0);
 display: flex;
 height: fit-content;
 display: flex;
@@ -42,18 +42,23 @@ align-items: center;
 justify-content: center;
 text-align: center;
 border-radius: 2%;
-color: rgb(255, 255, 255);
-background-color: #000000;
+color: rgb(0, 0, 0);
+background-color: #f8f8f8;
 padding: 6px;
 padding-left: 5px;
 padding-right: 5px;
 font-size: 10px;
 margin: 5px;
+font-weight: 1000;
+border-radius: 20px;
+padding: 10px;
 }
 
+
 .active2{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 font-weight: 1000;
+font-size: 15px;
 
 }
 
@@ -62,12 +67,16 @@ background-color: rgb(255, 0, 0);
 }
 
 #active1{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 font-weight: 1000;
-background-color: rgb(255, 0, 0);
+font-size: 15px;
+background-color: rgb(158, 133, 133);
 }
 
+a{
+   font-weight: 1000;
 
+}
 
 
  #firsttypeof{
@@ -86,7 +95,7 @@ padding-bottom: 20px;
 
 #element2{
     
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 1000;
 color: rgb(17, 0, 255);
 padding-bottom: 20px;
@@ -154,10 +163,10 @@ height: 1px;
       <div class="nav">
 
 
-         <DIV>
-            <a class="active1" href="">
+         <DIV id="active1">
+            <a href="">
             <i class="fa fa-home" style="font-size:35px;color:rgb(201, 214, 18)"></i> 
-             HOME
+            <br> HOME
             </a>
           </DIV>
 
@@ -171,7 +180,7 @@ height: 1px;
     
          <DIV>
             <a class="active2" href="https://aniruddhamaheshmane.github.io/cover-letter/">
-            <i class="fa fa-newspaper-o" style="font-size:35px;color:white"></i> 
+            <i class="fa fa-newspaper-o" style="font-size:35px;color:rgb(0, 0, 0)"></i> 
             </BR> COVER </BR> LETTER
             </a>
           </DIV>
@@ -188,14 +197,14 @@ height: 1px;
           <DIV>
             <a class="active2" href="https://wa.me/919834926132?text=">
             <i class="fa fa-phone-square" style="font-size:35px;color:rgb(127, 241, 127)"></i> 
-            CONTACT US
+          <br>  CONTACT US
             </a>
           </DIV>
 
           
 </DIV>
 
-<BUtton class="active1" id="logout">LOG OUT</BUtton>
+<BUtton class="active2" id="logout">LOG OUT</BUtton>
          </div>
 
           </div>
